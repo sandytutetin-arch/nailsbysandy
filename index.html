@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
@@ -39,7 +38,7 @@
     .about{background:var(--pink2)}.about-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:55px;align-items:center}
     .about-card{background:linear-gradient(145deg,#eecbd7,#f9e9ee);border-radius:22px;min-height:300px;display:grid;place-items:center;text-align:center;padding:30px}
     .about-card strong{font:600 2.5rem 'Playfair Display',serif;color:#fff}.about-copy h2{font-size:2.7rem;margin:10px 0 18px}.about-copy p{color:var(--muted);line-height:1.85}
-    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.gallery-item{aspect-ratio:4/5;border-radius:18px;background:linear-gradient(145deg,#f1d9e1,#fff4f6);display:flex;align-items:center;justify-content:center;text-align:center;padding:18px;color:#98677a;font-family:'Playfair Display',serif;font-size:1.15rem;border:1px solid var(--line)}
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.gallery-card{margin:0;background:white;border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 8px 24px #6b40500b}.gallery-card img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover}.gallery-card figcaption{padding:14px 16px;color:#98677a;font-family:'Playfair Display',serif;font-size:1.05rem}.gallery-note{font-size:.78rem;color:var(--muted);padding:0 16px 15px;margin:0}
     .booking{background:var(--ink);color:white;text-align:center}.booking h2{font-size:clamp(2.3rem,4vw,3.5rem);margin:10px 0 16px}.booking p{color:#e4d6dc;line-height:1.7;max-width:540px;margin:0 auto 26px}.booking .btn{background:#f4dce4;color:var(--ink)}
     footer{padding:28px 0;color:var(--muted);font-size:.85rem}.footer-row{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
     @media(max-width:800px){nav{display:none}.hero-grid,.about-grid{grid-template-columns:1fr;gap:30px}.hero{padding:55px 0}.hero-art{min-height:270px}.services{grid-template-columns:repeat(2,1fr)}}
@@ -77,6 +76,15 @@
   </div></section>
 
   <section id="galeria"><div class="wrap">
-    <div class="section-head"><div class="eyebrow">Inspiración</div><h2>Un poquito de mi trabajo</h2><p>Pronto encontrarás aquí fotografías de mis diseños y trabajos realizados.</p></div>
-    <div class="gallery"><div class="gallery-item">Tus próximos<br>diseños</div><div class="gallery-item">Detalles hechos<br>con cariño</div><div class="gallery-item">Color y estilo<br>para ti</div></div>
+    <div class="section-head"><div class="eyebrow">Trabajos realizados</div><h2>Un poquito de mi trabajo</h2><p>Diseños y manicuras realizados con dedicación. Cada detalle cuenta.</p></div>
+    <div class="gallery">
+      <figure class="gallery-card"><img src="assets/manicure-flores.jpg" alt="Manicure de base rosada con flores de colores" loading="lazy"><figcaption>Flores de colores</figcaption><p class="gallery-note">Diseño alegre y delicado</p></figure>
+      <figure class="gallery-card"><img src="assets/manicure-rosa-natural.jpg" alt="Manicure en tono rosa nude brillante" loading="lazy"><figcaption>Rosa natural</figcaption><p class="gallery-note">Un acabado suave y elegante</p></figure>
+      <figure class="gallery-card"><img src="assets/manicure-blanco.jpg" alt="Manicure de esmalte blanco brillante" loading="lazy"><figcaption>Blanco perlado</figcaption><p class="gallery-note">Un clásico luminoso</p></figure>
+    </div>
   </div></section>
+
+  <section class="booking" id="reservas"><div class="wrap"><div class="eyebrow" style="color:#eab9ca">Agenda abierta</div><h2>¿Lista para tu próxima manicure?</h2><p>Escríbeme por WhatsApp para consultar horarios, ubicación y disponibilidad. ¡Me encantará atenderte!</p><a class="btn" href="https://wa.me/56975367965?text=Hola%20Sandy%2C%20quiero%20agendar%20una%20hora%20en%20Nails%20by%20Sandy">Reservar por WhatsApp</a></div></section>
+</main>
+<footer><div class="wrap footer-row"><span class="brand">Nails <span>by Sandy</span></span><span>© 2026 Nails by Sandy · Hecho con cariño</span><a href="https://wa.me/56975367965">WhatsApp: +56 9 7536 7965</a></div></footer>
+</body></html>
